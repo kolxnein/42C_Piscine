@@ -6,7 +6,7 @@
 /*   By: yozbakir <yozbakir@student.42kocaeli.com.  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/12 19:49:44 by yozbakir          #+#    #+#             */
-/*   Updated: 2023/07/12 20:40:40 by yozbakir          ###   ########.tr      */
+/*   Updated: 2023/07/13 19:34:22 by yozbakir          ###   ########.tr      */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,11 @@ void	ft_print_alphabet(void)
 	while (a <= 'z')
 	{
 		write(1, &a, 1);
-		c++;
+		a++;
 	}
 }
+
+/*int main(void)
+{
+	ft_print_alphabet();
+}*/

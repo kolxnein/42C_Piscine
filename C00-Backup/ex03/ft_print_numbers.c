@@ -6,7 +6,7 @@
 /*   By: yozbakir <yozbakir@student.42kocaeli.com.  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/12 20:04:32 by yozbakir          #+#    #+#             */
-/*   Updated: 2023/07/12 20:04:34 by yozbakir          ###   ########.tr      */
+/*   Updated: 2023/07/13 19:37:31 by yozbakir          ###   ########.tr      */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,17 @@
 
 void	ft_print_numbers(void)
 {
-	char	a;
+	char	rakam;
 
-	a = '0';
-	while (a <= '9')
+	rakam = '0';
+	while (rakam <= '9')
 	{
-		write(1, &a, 1);
-		a++;
+		write(1, &rakam, 1);
+		rakam++;
 	}
 }
+
+/*int main(void)
+{
+	ft_print_numbers();
+}*/

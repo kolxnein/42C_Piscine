@@ -6,7 +6,7 @@
 /*   By: yozbakir <yozbakir@student.42kocaeli.com.  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/12 20:04:12 by yozbakir          #+#    #+#             */
-/*   Updated: 2023/07/12 20:04:15 by yozbakir          ###   ########.tr      */
+/*   Updated: 2023/07/13 19:52:30 by yozbakir          ###   ########.tr      */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,4 +22,9 @@ void	ft_print_reverse_alphabet(void)
 		write(1, &z, 1);
 		z--;
 	}
+}
+
+int	main(void)
+{
+	ft_print_reverse_alphabet();
 }
