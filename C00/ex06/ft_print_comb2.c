@@ -19,28 +19,28 @@ void	ft_putchar(char c)
 
 void	ft_print_comb2(void)
 {
-	int	birinci;
-	int	ikinci;
+	int	a;
+	int	b;
 
-	birinci = 0;
-	ikinci = 0;
-	while (birinci <= 98)
+	a = 0;
+	b = 0;
+	while (a <= 98)
 	{
-		ikinci = birinci + 1;
-		while (ikinci <= 99)
+		b = a + 1;
+		while (b <= 99)
 		{
-			ft_putchar(birinci / 10 + 48);
-			ft_putchar(birinci % 10 + 48);
+			ft_putchar(a / 10 + 48);
+			ft_putchar(a % 10 + 48);
 			write(1, " ", 1);
-			ft_putchar(ikinci / 10 + 48);
-			ft_putchar(ikinci % 10 + 48);
-			if (birinci != 98 || ikinci != 99)
+			ft_putchar(b / 10 + 48);
+			ft_putchar(b % 10 + 48);
+			if (a != 98 || b != 99)
 			{
 				write(1, ", ", 2);
 			}
-			ikinci++;
+			b++;
 		}
-		birinci++;
+		a++;
 	}
 }
 
