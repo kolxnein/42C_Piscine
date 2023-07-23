@@ -1,45 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
+/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yozbakir <yozbakir@student.42kocaeli.com.  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/13 14:37:49 by yozbakir          #+#    #+#             */
-/*   Updated: 2023/07/13 19:51:40 by yozbakir          ###   ########.tr      */
+/*   Created: 2023/07/17 17:42:55 by yozbakir          #+#    #+#             */
+/*   Updated: 2023/07/19 19:25:04 by yozbakir          ###   ########.tr      */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putchar(char c)
+void	ft_rev_int_tab(int *tab, int size)
 {
-	write(1, &c, 1);
-}
+	int	i;
+	int	f;
+	int	holder;
 
-void	ft_print_comb2(void)
-{
-	int	a;
-	int	b;
-
-	a = 0;
-	b = 0;
-	while (a <= 98)
+	i = 0;
+	f = size - 1;
+	while (i < f)
 	{
-		b = a + 1;
-		while (b <= 99)
-		{
-			ft_putchar(a / 10 + 48);
-			ft_putchar(a % 10 + 48);
-			write(1, " ", 1);
-			ft_putchar(b / 10 + 48);
-			ft_putchar(b % 10 + 48);
-			if (a != 98 || b != 99)
-			{
-				write(1, ", ", 2);
-			}
-			b++;
-		}
-		a++;
+		holder = tab[i];
+		tab[i] = tab[f];
+		tab[f] = holder;
+		i++;
+		f--;
 	}
 }
